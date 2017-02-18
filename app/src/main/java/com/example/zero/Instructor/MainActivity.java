@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        pref = getSharedPreferences("logi.conf", Context.MODE_PRIVATE);
+        pref = getSharedPrefereces("logi.conf", Context.MODE_PRIVATE);
         editor = pref.edit();
 
         String username = pref.getString("username", "");
